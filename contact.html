@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Ycce_CollegeLogo.jpg/150px-Ycce_CollegeLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="myLoad()">
+    <div id="loading"></div>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/YCCE_logo.png" width="40"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="workshop.html">WORKSHOP</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+        
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.4334915982713!2d78.97638281518684!3d21.095276990879402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495c6628bcedf%3A0x22dd9194384088b8!2sYCCE%20college!5e0!3m2!1sen!2sin!4v1636458496761!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></section>
+    <section class="Information">
+        <div class="row">
+            <div class="Information-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Yeshwantrao Chavan College of Engineering</h5>
+                        <p>Hingna Road, Wanadongri, Nagpur, Maharashtra </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>ct_ycce_workshop@ycce.in</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>+91-7104-295083</h5>
+                        <p>Sunday to Saturday,9AM to 6PM </p>
+                    </span>
+                </div>
+            </div>
+            <div class="Information-col">
+                <form action="/action_page.php" method="get">
+                    <input type="text" placeholder="Enter your name" style="width: 350px;" required>
+                    <input type="email" placeholder="Email Id" style="width: 350px;" required><br>
+                    <label for="workshop">
+                    <input list="workshopList" name="workshop" id="workshop" placeholder="Workshop Selected" style="width: 350px">
+                    <datalist id="workshopList">
+                        <option value="Droid">
+                        <option value="Artificial Intelligence">
+                        <option value="Cyber Security">
+                        <option value="Ethical Hacking">
+                        <option value="Graphix">
+                      </datalist>
+                    </label>
+                    <textarea rows="10" placeholder="Message" style="width: 350px;" required></textarea>
+                    <button type="submit" class="text-btn red-btn"  onclick="JavaScript:alert('Thank You for giving your valuable time to us!');"> Send Feedback</button>
+                </form>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Founded in 2021, CT Ycce Workshop has helped hundreds of organisations to find and implement engaging, effective elearning.<br>We always welcome calls to discuss how you could transform training and development.</p>
+        
+        <div class="icons">
+           <a href="https://www.facebook.com/"><img src="Images/icons8-facebook.svg" class="i1"/></a>
+            <a href="https://www.instagram.com/"><img src="Images/icons8-instagram.svg" class="i1"/></a>
+            <a href="https://twitter.com/"><img src="Images/icons8-twitter-circled.svg" class="i1"/></a>
+            <a href="https://in.linkedin.com/"><img src="Images/icons8-linkedin.svg" class="i1"/></a>
+        </div>
+        <p>Made with <i class="fa fa-heartbeat"></i> By Group Five<br>Ashlesha, Devyani, Isha, Sakshi, Shubhalakshmi</p>
+           
+    </section>
+    <!-- JS -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+            
+        }
+
+        var preloader = document.getElementById('loading');
+        function myLoad(){
+            preloader.style.display = 'none';
+        }
+    </script>
+    </body>
+    </html>

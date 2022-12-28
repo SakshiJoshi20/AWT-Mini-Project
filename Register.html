@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Workshop</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Ycce_CollegeLogo.jpg/150px-Ycce_CollegeLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="myLoad()">
+    <div id="loading"></div>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/YCCE_logo.png" width="40"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="workshop.html">WORKSHOP</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Register Now</h1>
+
+    </section>
+    <section class="Register">
+        <div class="Information-col">
+            <h2>Registration Form</h2>
+            <form action="">
+                <div><input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Email Id" required></div>
+                <div>
+                <input type="text" placeholder="Workshop Selected" required>
+                <input type="number" placeholder="Reg Number" required></div>
+                <div> <input type="password" placeholder="Enter Password" required>
+                <input type="password" placeholder="Confirm Password" required></div>
+                <button type="submit" class="text-btn red-btn" onclick="JavaScript:alert('Thank You for giving your valuable time to us!');"> Register Now</button>
+            </form>
+        </div>
+
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Founded in 2021, CT Ycce Workshop has helped hundreds of organisations to find and implement engaging, effective elearning.<br>We 
+always welcome calls to discuss how you could transform training and development.</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/"><img src="Images/icons8-facebook.svg" class="i1"/></a>
+            <a href="https://www.instagram.com/"><img src="Images/icons8-instagram.svg" class="i1"/></a>
+            <a href="https://twitter.com/"><img src="Images/icons8-twitter-circled.svg" class="i1"/></a>
+            <a href="https://in.linkedin.com/"><img src="Images/icons8-linkedin.svg" class="i1"/></a>
+        </div>
+        <p>Made with <i class="fa fa-heartbeat"></i> By Group Four<br>Ashlesha, Devyani, Isha, Sakshi, Shubhalakshmi</p>
+
+    </section>
+    <!-- JS -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+
+        var preloader = document.getElementById('loading');
+        function myLoad(){
+            preloader.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

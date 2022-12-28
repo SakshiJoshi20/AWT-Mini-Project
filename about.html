@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Ycce_CollegeLogo.jpg/150px-Ycce_CollegeLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="myLoad()">
+    <div id="loading"></div>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/YCCE_logo.png" width="40"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="workshop.html">WORKSHOP</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+        
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Department of Computer Technology</h1>
+                <p>The Department was established in 1985 and is accredited by National Board of Accreditation three times since 2003 and provides an outstanding Academic and Research environment complemented by excellence in teaching. The curricula of programmes have been designed to cater to the ever changing needs and demands of the IT industry as well as Research organizations with a proper blend of professional core and industry aligned electives.<br>
+		        <b>Vision of the Department</b> is to be a well-known center for pursuing computer education through innovative pedagogy, value-based education and industry collaboration.<br>
+                <b>Mission of the Department</b> is to establish learning ambience for ushering in computer engineering professionals in core and multidisciplinary arena by developing problem-solving skills through emerging technologies.</p>
+                <a href="https://www.ycce.edu/computer-technology.php" class="text-btn  red-btn">Explore Now</a>
+
+            </div>
+            <div class="about-col">
+                <br><br>
+                <img src="Images/CT.jpg">
+
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Connect with us</h4>
+        
+        <div class="icons">
+           <a href="https://www.facebook.com/"><img src="Images/icons8-facebook.svg" class="i1"/></a>
+            <a href="https://www.instagram.com/"><img src="Images/icons8-instagram.svg" class="i1"/></a>
+            <a href="https://twitter.com/"><img src="Images/icons8-twitter-circled.svg" class="i1"/></a>
+            <a href="https://in.linkedin.com/"><img src="Images/icons8-linkedin.svg" class="i1"/></a>
+        </div>
+        <p>Made with <i class="fa fa-heartbeat"></i> By Group Four<br>Ashlesha, Devyani, Isha, Sakshi, Shubhalakshmee</p>
+           
+    </section>
+    <!-- JS -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+            
+        }
+
+        var preloader = document.getElementById('loading');
+        function myLoad(){
+            preloader.style.display = 'none';
+        }
+
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Ycce_CollegeLogo.jpg/150px-Ycce_CollegeLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="myLoad()">
+    <div id="loading"></div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/YCCE_logo.png" width="40"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="workshop.html">WORKSHOP</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>YCCE, Nagpur</h1><br>
+            <h2>An Autonomous Institution Affiliated to Rashtrasant Tukadoji Maharaj Nagpur University</h2><br>
+            <p>Established in the year 1984 by Nagar Yuwak Shikshan Sanstha, Nagpur. YCCE is the prominent institution acknowledged for remarkable engineering education and research. Currently, YCCE is one of the most opted engineering colleges in Maharashtra.</p>
+            <a href="https://www.ycce.edu/" class="text-btn">Visit Us To Know More</a>
+        </div>
+        
+    </section>
+    <!-- ------Workshops--- -->
+        <section class="workshop">
+            <h1 style="text-align: center;"><b>Welcome to<br>Department of Computer Technology</b></h1><br><br>
+            <h1><br><b>Workshops</b></h1><br><hr><br>
+            <h3>Department of Computer Technology<br>Yeshwantrao Chavan College of Engineering</h3>
+            <div class="row">
+                <br><br><br>
+                <div class="workshop-col">
+                    <img src="Images/Droid_logo.png"><br>
+                    <h3>Droid</h3>
+                    <p>An Android App development workshop for developers to enhance their skills. One will able to develop any type of the App of his or her choice. All participants will get certificates after attending workshop.</p>
+                    <a href="workshop.html" class="text-btn">Click Here To Know More</a>
+                </div>
+                <div class="workshop-col">
+                    <img src="Images/AI_logo.png"><br>
+                    <h3>AI</h3>
+                    <p>We want to encourage as broad a group of people as possible to learn what AI is, what can be done with AI, and how to start creating AI methods. This workshop includes theory along with practical exercises</p>
+                    <a href="workshop.html" class="text-btn">Click Here To Know More</a>
+                </div>
+                <div class="workshop-col">
+                    <img src="Images/Graphics_logo.png"><br>
+                    <h3>Graphics</h3>
+                    <p>Good design is about thinking hard about what you want to do and what you want to work with before you start. Are you the one who is aspiring to learn Graphic designing? If yes, then Attend the workshop and enjoy:)</p>
+                    <a href="workshop.html" class="text-btn">Click Here To Know More</a>
+                </div>
+                <br><br>
+
+            </div>
+        </section>
+     <!-- -----contact------->
+     <section class="contact">
+         <h1>Enroll for our Various online Workshop</h1>
+         <h2 style="color: aliceblue;">To get in touch with us :)</h2><br>
+         <a href="contact.html" class="text-btn">Contact Us</a>
+     </section>
+     <!-- ------Footer--- -->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Founded in 2021, CT Ycce Workshop has helped hundreds of organisations to find and implement engaging, effective elearning.<br>We always welcome calls to discuss how you could transform training and development.</p>
+         <div class="icons">
+            <a href="https://www.facebook.com/"><img src="Images/icons8-facebook.svg" class="i1"/></a>
+            <a href="https://www.instagram.com/"><img src="Images/icons8-instagram.svg" class="i1"/></a>
+            <a href="https://twitter.com/"><img src="Images/icons8-twitter-circled.svg" class="i1"/></a>
+            <a href="https://in.linkedin.com/"><img src="Images/icons8-linkedin.svg" class="i1"/></a>
+         </div>
+         <p>Made with <i class="fa fa-heartbeat"></i> By Group Four<br>Ashlesha, Devyani, Isha, Sakshi, Shubhalakshmee</p>
+            
+     </section>
+    <!-- JS -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+            
+        }
+
+        var preloader = document.getElementById('loading');
+
+        function myLoad(){
+            preloader.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
